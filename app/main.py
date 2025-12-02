@@ -26,7 +26,7 @@ model = joblib.load(MODEL_PATH)
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "ok" , "version" : "100"}
 
 
 @app.post("/predict")
